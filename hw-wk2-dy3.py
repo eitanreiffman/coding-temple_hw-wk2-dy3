@@ -23,6 +23,9 @@ def find_digits(address_string):
     address_string = [c for c in address_string if c.isdigit()]
     return address_string
 
+    #Shorthand Version:
+    #return [c for c in address_string if c.isdigit()]
+
 address = "1537 South Holt Ave, Los Angeles CA, 90035"
 print(find_digits(address))
 
