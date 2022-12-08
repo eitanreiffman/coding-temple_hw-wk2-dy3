@@ -6,10 +6,11 @@
 
 def turn_negative(nums):
     nums = [num * -1 for num in nums]
-    print(nums)
+    return nums
 
 negative_nums = [4, 123, 88, 53, 11, 2, 94]
-turn_negative(negative_nums)
+print(turn_negative(negative_nums))
+
 
 # Exercise 2
 # Given a string, return a list of all of the digits in the string
@@ -20,10 +21,10 @@ turn_negative(negative_nums)
 
 def find_digits(address_string):
     address_string = [c for c in address_string if c.isdigit()]
-    print(address_string)
+    return address_string
 
 address = "1537 South Holt Ave, Los Angeles CA, 90035"
-find_digits(address)
+print(find_digits(address))
 
 # Exercise 3
 # Given a string 'digits', return a string of the digits +1
@@ -32,7 +33,7 @@ find_digits(address)
 # Output: '124'
 
 def add_by_one(digits):
-    print(str(int(digits) + 1))
+    return str(int(digits) + 1)
 
 my_string = '25'
-add_by_one(my_string)
+print(add_by_one(my_string))
